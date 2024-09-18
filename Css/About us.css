@@ -1,0 +1,190 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: transparent; /* Initial transparent background */
+    transition: background-color 0.4s ease;
+    padding: 15px 0;
+}
+
+.navbar-logo {
+    max-width: 120px;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffc107; /* Highlight active link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Shop Now Button */
+.nav-link.btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link.btn:hover {
+    background-color: #e6a800;
+    color: #fff;
+}
+
+/* Navbar Background on Scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background after scroll */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .navbar-logo {
+        max-width: 100px;
+    }
+
+    .nav-link.btn {
+        padding: 6px 15px;
+    }
+}
+
+/* About Us Section */
+.about-us {
+    background-color: #f7f5f0;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #7d745e;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.section-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-img {
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Our Mission Section */
+.our-mission {
+    background-color: #f2efe9;
+    padding: 80px 0;
+}
+
+.our-mission .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #7d745e;
+}
+
+.our-mission .section-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.our-mission .section-desc {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Meet Our Team Section */
+.team {
+    padding: 80px 0;
+}
+
+.team .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #7d745e;
+    margin-bottom: 40px;
+}
+
+.team .team-member {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.team .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.team .team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #7d745e;
+    margin-top: 15px;
+}
+
+.team-role {
+    font-size: 1rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}

@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: transparent; /* Initial transparent background */
+    transition: background-color 0.4s ease;
+    padding: 15px 0;
+}
+
+.navbar-logo {
+    max-width: 120px;
+}
+
+
+.navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffc107; /* Highlight active link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Shop Now Button */
+.nav-link.btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link.btn:hover {
+    background-color: #e6a800;
+    color: #fff;
+}
+
+/* Navbar Background on Scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background after scroll */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .navbar-logo {
+        max-width: 100px;
+    }
+
+    .nav-link.btn {
+        padding: 6px 15px;
+    }
+}
+
+.hero-section {
+    background-image: url('../Imges/887ff2bd857fb3603d4e4eb23c3a7cb1.jpg'); /* Background image */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    z-index: 1;
+}
+
+/* Text styling */
+.play {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+    z-index: 3;
+    position: relative;
+    text-transform: uppercase;
+    color: #ffa318;
+}
+
+p.lead {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+}
+
+.play2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #ffa318;
+    margin-top: 40px;
+    z-index: 2;
+    position: relative;
+}
+
+.coffee-description {
+    max-width: 800px;
+    line-height: 1.6;
+    color: #e8e8e8;
+    z-index: 2;
+    position: relative;
+}
+
+.play3{
+    color: rgb(148, 148, 148);
+}
+
+/* Coffee bag image styling */
+.coffee-image img {
+    max-width: 400px;
+    transition: transform 0.5s ease;
+    z-index: 2;
+    position: relative;
+}
+
+.coffee-image img:hover {
+    transform: scale(1.1); /* Hover effect for zooming */
+}
+
+/* Logo styling */
+.logo img {
+    max-width: 400px;
+    z-index: 2;
+    position: relative;
+    animation: fadeInDown 2s ease-in-out;
+    border-radius: 50%;
+}
+
+/* Parallax effect */
+.hero-section {
+    background-attachment: fixed;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate-image {
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .coffee-image img {
+        max-width: 250px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .coffee-description {
+        font-size: 1rem;
+    }
+
+    .logo img {
+        max-width: 150px;
+    }
+}
+
+
+.coffee-product-section {
+    background-color: #0f1e10;
+    position: relative;
+    padding: 100px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffc107;
+}
+
+.section-subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+.product-name {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.product-description {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.btn-outline-light {
+    color: #fff;
+    border: 2px solid #ffc107;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.product-image img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+}
+
+/* Add floating coffee beans */
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Coffee Cup Section */
+.coffee-cup-section {
+    background-color: #d6b873;
+    padding: 50px 0;
+}
+
+.coffee-cup-section .section-title {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.coffee-cup-section .section-subtitle {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.coffee-cup-section .btn-primary {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.coffee-cup-image img {
+    max-width: 300px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .coffee-cup-section .section-title {
+        font-size: 1.8rem;
+    }
+
+    .coffee-cup-image img {
+        max-width: 200px;
+    }
+}
+
+
+/* .testimonial-section {
+    padding: 100px 0;
+    background-color: #f7f7f7;
+    text-align: center;
+} */
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #7d745e;
+    margin-bottom: 30px;
+}
+
+.blockquote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.blockquote-footer {
+    font-size: 1rem;
+    color: #888;
+    font-style: normal;
+    margin-top: 15px;
+}
+
+.quote {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+/* Map Section */
+.map-section {
+    position: relative;
+    background-image: url('../Imges/Screenshot\ 2024-09-07\ 192721.png');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 50px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(15, 30, 16, 0.8); /* Dark overlay effect */
+}
+
+.location-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer-logo {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 100px; /* Set logo size */
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ffc107; /* Golden hover effect */
+}
+
+.main-icons{
+ 
+    background-color: #0f1e10;
+
+}
+
+.main-icons .text{
+
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #e6a800;
+    margin-top: 20px;
+}
+
+.sec-text{
+    color: #e8e8e8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .quote {
+        font-size: 1.25rem;
+    }
+
+    .map-section {
+        height: 300px;
+    }
+
+    .footer-logo img {
+        width: 80px;
+    }
+}

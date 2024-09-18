@@ -1,0 +1,230 @@
+
+
+.navbar {
+    background-color: transparent; /* Initial transparent background */
+    transition: background-color 0.4s ease;
+    padding: 15px 0;
+}
+
+.navbar-logo {
+    max-width: 120px;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+    color: #ffc107; /* Highlight active link */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Shop Now Button */
+.nav-link.btn {
+    background-color: #ffc107;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link.btn:hover {
+    background-color: #e6a800;
+    color: #fff;
+}
+
+/* Navbar Background on Scroll */
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background after scroll */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .navbar-logo {
+        max-width: 100px;
+    }
+
+    .nav-link.btn {
+        padding: 6px 15px;
+    }
+}
+
+.contact-us {
+    background-color: #f7f5f0;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #7d745e;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #7d745e;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin-right: 30px;
+    color: #7d745e;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+/* Contact Form */
+.contact-form .form-label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.contact-form button {
+    background-color: #7d745e;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #5a4d3b;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+}
+
+.reviews-section {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #7d745e;
+    margin-bottom: 50px;
+}
+
+.customer-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 5px solid #7d745e;
+}
+
+.review-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.customer-name {
+    font-size: 1.4rem;
+    color: #7d745e;
+}
+
+.rating i {
+    color: #ffc107;
+    margin-right: 5px;
+}
+
+.review-content p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+/* Carousel Controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #7d745e;
+    border-radius: 50%;
+}
+
+.carousel-item {
+    transition: transform 0.8s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .customer-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .review-content {
+        padding: 20px;
+    }
+
+    .customer-name {
+        font-size: 1.2rem;
+    }
+
+    .rating i {
+        font-size: 1rem;
+    }
+
+    .review-content p {
+        font-size: 0.9rem;
+    }
+}
