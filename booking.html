@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">HotelLux</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+<main id="main-content">
+    <div class="container">
+        <h1 class="page-title">Book Your Stay</h1>
+
+        <div class="booking-layout section">
+            <section class="booking-form-section">
+                <h2 class="section-title-sub">Your Details</h2>
+                <form id="bookingForm" class="styled-form">
+                    <div class="form-group">
+                        <label for="guestName">Full Name(s):</label>
+                        <input type="text" id="guestName" name="guestName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkInDate">Check-in Date:</label>
+                        <input type="date" id="checkInDate" name="checkInDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="checkOutDate">Check-out Date:</label>
+                        <input type="date" id="checkOutDate" name="checkOutDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numAdults">Number of Adults:</label>
+                        <input type="number" id="numAdults" name="numAdults" min="1" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="numChildren">Number of Children:</label>
+                        <input type="number" id="numChildren" name="numChildren" min="0" value="0">
+                    </div>
+                    <div class="form-group">
+                        <label for="roomType">Room Type Preference:</label>
+                        <select id="roomType" name="roomType">
+                            <option value="">Select a room type...</option>
+                            <option value="standard-queen">Standard Queen Room</option>
+                            <option value="deluxe-king">Deluxe King Suite</option>
+                            <option value="family-room">Family Room</option>
+                            <option value="single-room">Cozy Single Room</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="specialRequests">Special Requests:</label>
+                        <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Any special needs or preferences..."></textarea>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Proceed to Payment</button>
+                    </div>
+                </form>
+            </section>
+
+            <aside class="booking-summary-section card">
+                <h3 class="section-title-sub">Booking Summary</h3>
+                <div class="summary-item" id="summaryCheckIn">Check-in: <span>N/A</span></div>
+                <div class="summary-item" id="summaryCheckOut">Check-out: <span>N/A</span></div>
+                <div class="summary-item" id="summaryRoomType">Room Type: <span>N/A</span></div>
+                <div class="summary-item" id="summaryGuests">Guests: <span>N/A</span></div>
+                <div class="summary-item summary-cost" id="summaryEstimatedCost">Estimated Cost: <span>$0.00</span></div>
+                <p class="summary-note">Actual cost will be confirmed upon booking. Additional taxes and fees may apply.</p>
+            </aside>
+        </div>
+
+        <section class="payment-placeholder-section section text-center">
+            <h2 class="section-title-sub">Payment Process</h2>
+            <p>You will be redirected to our secure payment gateway to complete your booking.</p>
+            <p><em>(Payment gateway integration is not yet implemented)</em></p>
+        </section>
+    </div> <!-- /.container -->
+</main> <!-- /#main-content -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 HotelLux. All rights reserved. Placeholder Footer.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Rooms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">HotelLux</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html" class="active">Rooms</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div class="container">
+            <h1 class="page-title">Our Rooms</h1>
+
+            <!-- Filtering/Search Section -->
+            <section class="filter-section section">
+                <h2 class="section-title">Find Your Perfect Room</h2>
+                <form class="filter-form">
+                    <div class="form-group">
+                        <label for="room-type">Room Type:</label>
+                        <select id="room-type" name="room-type">
+                            <option value="">All Types</option>
+                            <option value="standard-queen">Standard Queen Room</option>
+                            <option value="deluxe-king">Deluxe King Suite</option>
+                            <option value="family-room">Family Room</option>
+                            <option value="single-room">Cozy Single Room</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="price-min">Min Price:</label>
+                        <input type="number" id="price-min" name="price-min" placeholder="$50">
+                    </div>
+                    <div class="form-group">
+                        <label for="price-max">Max Price:</label>
+                        <input type="number" id="price-max" name="price-max" placeholder="$500">
+                    </div>
+                    <div class="form-group filter-amenities">
+                        <label>Amenities:</label>
+                        <div>
+                            <input type="checkbox" id="balcony" name="amenities" value="balcony">
+                            <label for="balcony" class="checkbox-label">Balcony</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="sea-view" name="amenities" value="sea-view">
+                            <label for="sea-view" class="checkbox-label">Sea View</label>
+                        </div>
+                         <div>
+                            <input type="checkbox" id="free-wifi" name="amenities" value="free-wifi">
+                            <label for="free-wifi" class="checkbox-label">Free Wi-Fi</label>
+                        </div>
+                    </div>
+                    <div class="form-group filter-buttons">
+                        <button type="submit" class="btn">Apply Filters</button>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Room Gallery Section -->
+            <section class="room-gallery section">
+                <h2 class="section-title">Available Rooms</h2>
+                <div class="room-grid">
+                    <div class="room-item card">
+                        <img src="https://via.placeholder.com/400x250?text=Standard+Queen" alt="Standard Queen Room">
+                        <div class="room-details">
+                            <h3>Standard Queen Room</h3>
+                            <p class="room-features">A comfortable room with a queen-sized bed, city view, en-suite bathroom, TV, and free Wi-Fi. Perfect for solo travelers or couples. Room size: 25 sqm.</p>
+                            <p class="room-price">$120 / night</p>
+                            <a href="booking.html?room=standard-queen" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="room-item card">
+                        <img src="https://via.placeholder.com/400x250?text=Deluxe+King+Suite" alt="Deluxe King Suite">
+                        <div class="room-details">
+                            <h3>Deluxe King Suite</h3>
+                            <p class="room-features">Spacious suite with a king-sized bed, separate living area, balcony with ocean view, mini-fridge, coffee maker, and premium Wi-Fi. Room size: 50 sqm.</p>
+                            <p class="room-price">$250 / night</p>
+                            <a href="booking.html?room=deluxe-king" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="room-item card">
+                        <img src="https://via.placeholder.com/400x250?text=Family+Room" alt="Family Room">
+                        <div class="room-details">
+                            <h3>Family Room</h3>
+                            <p class="room-features">Ideal for families, this room features two double beds, a play area for kids, garden view, mini-fridge, and complimentary breakfast. Room size: 40 sqm.</p>
+                            <p class="room-price">$180 / night</p>
+                            <a href="booking.html?room=family-room" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="room-item card">
+                        <img src="https://via.placeholder.com/400x250?text=Single+Room" alt="Single Room">
+                        <div class="room-details">
+                            <h3>Cozy Single Room</h3>
+                            <p class="room-features">A cozy room for the solo traveler, featuring a single bed, work desk, city view, and all standard amenities. Room size: 20 sqm.</p>
+                            <p class="room-price">$90 / night</p>
+                            <a href="booking.html?room=single-room" class="btn">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- /.container -->
+    </main> <!-- /#main-content -->
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 HotelLux. All rights reserved. Placeholder Footer.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
